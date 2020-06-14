@@ -1,16 +1,42 @@
-<input type="text" [(ngModel)]="title">
+<input type="text" [(ngModel)]="title" />
 {{ title }}
 
-<div *ngIf="title=='mostrar'">
-  Este es un div que aparece cuando titulo es mostrar
+<app-product></app-product>
+
+<div *ngIf="title == 'julian'">
+  Este es julian
 </div>
+
+<div *ngIf="title == 'nicolas'">
+  Este es nicolas
+</div>
+
+<div *ngIf="title == 'camilo'">
+  Este es camilo
+</div>
+
+<div [ngSwitch]="title">
+  <p *ngSwitchCase="'julian'">Este es julian</p>
+  <p *ngSwitchCase="'nicolas'">Este es nicolas</p>
+  <p *ngSwitchCase="'camilo'">Este es camilo</p>
+  <p *ngSwitchDefault>No hay match</p>
+</div>
+
 
 <button (click)="addItem()">Add Item</button>
 
 <ul>
-  <li *ngIf="items.length==0">Lista esta vacia</li>
+  <li *ngIf="items.length == 0">Lista esta vacia</li>
   <li *ngFor="let item of items; index as i">
     {{ item }} {{ i }}
     <button (click)="deleteItem(i)">delete</button>
   </li>
 </ul>
+
+<div *ngFor="let product of products">
+  {{ product.title }}
+  <img [src]="product.image">
+  {{ product.price }}
+  {{ product.description }}
+</div>
+
