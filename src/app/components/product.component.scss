@@ -1,9 +1,26 @@
-:host{
-    margin: 2px;
-    border:1px solid black;
-    border-radius: 5px;
-    display: block;
+:host {
+  margin: 2px;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  display: block;
+  background-color: #d9d9d9;
+  width: 300px;
+  height: 400px;
 }
-img{
-    max-width: 100%;   
+img {
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 200px;
+}
+
+.add-to-cart-button {
+  background-color: #00b050;
+  color: white;
+  
+}
+
+.add-to-cart-button:hover {
+    background-color: white;
+    color: #00b050;
+    border:0.5px solid #00b050;
 }

@@ -9,7 +9,13 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap:10px;
-    justify-items: center;;
+    justify-items: center; 
+    height: 92%;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+app-product{
+    border:1px solid lightgreen;
+    border-radius: 5px;;
+}
