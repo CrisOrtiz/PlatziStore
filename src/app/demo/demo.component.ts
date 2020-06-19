@@ -7,20 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DemoComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
   title = 'platzi-store';
 
   items = ['cristhian', 'Rocio', 'Maya'];
 
   objeto = {};
 
-  power=10;
+  power = 10;
 
-  
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
   addItem() {
     this.items.push('nuevo item');

@@ -11,7 +11,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 
 const material = [
-  CommonModule,  
+  CommonModule,
   MatButtonToggleModule,
   MatIconModule,
   MatBadgeModule,

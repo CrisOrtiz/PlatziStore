@@ -9,7 +9,7 @@ import {
   DoCheck,
   OnDestroy,
 } from '@angular/core';
-import { Product } from '../product.module';
+import { Product } from './product.module';
 
 @Component({
   selector: 'app-product',
@@ -20,7 +20,7 @@ export class ProductComponent implements OnInit, DoCheck, OnDestroy {
   @Input() product: Product;
   @Output() productClicked: EventEmitter<any> = new EventEmitter();
 
-  today=new Date();
+  today = new Date();
 
   constructor() {
     console.log('1. constructor');
