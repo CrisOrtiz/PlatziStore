@@ -1,6 +1,11 @@
 <input type="text" [(ngModel)]="title" />
 {{ title }}
 
+<br>
+<label for="power">usando pipes para exponential</label>
+<input type="text" [(ngModel)]="power" />
+{{ power | exponential}}
+
 <div *ngIf="title == 'julian'">
   Este es julian
 </div>
@@ -30,7 +35,7 @@
   </li>
 </ul>
 
-<div class="products">
+<div class="products container">
   <app-product *ngFor="let product of products"
     (productClicked)="clickProduct($event)"
     [product]="product"
