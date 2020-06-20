@@ -10,15 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { ExponentialPipe } from './pipes/exponential/exponential.pipe';
 import { HighlightDirective } from './directives/highlight/highlight.directive';
-import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { DemoComponent } from './demo/demo.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { BannerComponent } from './components/banner/banner.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LayoutComponent } from './layout/layout.component';
+import { HomeModule } from './home/home.module';
 
 
 @NgModule({
@@ -28,15 +28,14 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     CartComponent,
     ExponentialPipe,
     HighlightDirective,
-    HomeComponent,
     ProductsComponent,
     ContactComponent,
     DemoComponent,
     HeaderComponent,
     FooterComponent,
-    BannerComponent,
     PageNotFoundComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +43,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

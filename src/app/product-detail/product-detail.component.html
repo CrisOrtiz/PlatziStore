@@ -1,1 +1,13 @@
-<p>product-detail works!</p>
+<div>
+    <img [src]="product.image" alt="" class="product-image">
+</div>
+<div>
+    <ul>
+        <li>Nombre: {{ product.title }}</li>
+        <li>Precio: {{ product.price | currency:"BOB ":"symbol" }}</li>
+        <li>Descripcion: {{ product.description }}</li>
+    </ul>
+</div>
+<div>
+    <button mat-raised-button class="back-button" (click)="backClicked()">Volver</button>
+</div>

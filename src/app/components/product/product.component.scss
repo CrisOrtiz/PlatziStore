@@ -48,12 +48,19 @@ img {
 }
 .product-description{
   height: 100px;
+  width: 80%;
+  text-align: center;
 }
-
-
-
 .product-actions{
   height: 50px;
   width: 100%;
-  
+}
+.details-link{
+  font-size: smaller;
+  color:black;
+  margin-left: 60%;
+  text-decoration: none;
+}
+.details-link:hover{
+  color: green;
 }

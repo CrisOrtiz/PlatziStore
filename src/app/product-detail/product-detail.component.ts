@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params} from '@angular/router';
 import { ProductsService } from './../services/products/products.service';
+import { Product } from '../components/product/product.module';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-product-detail',
@@ -9,17 +11,23 @@ import { ProductsService } from './../services/products/products.service';
 })
 export class ProductDetailComponent implements OnInit {
 
+  product: Product;
+
   constructor(
     private route: ActivatedRoute,
-    private productsService: ProductsService
+    private productsService: ProductsService,
+    private location: Location
   ) { }
 
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) => {
       const id = params.id;
-      const product = this.productsService.getProduct(id);
-      console.log(product);
+      this.product = this.productsService.getProduct(id);
     });
+  }
+
+  backClicked(){
+    this.location.back();
   }
 
 }

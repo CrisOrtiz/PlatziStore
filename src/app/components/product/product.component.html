@@ -10,9 +10,9 @@
     <p>
       {{ product.description | slice:0:10 }}
     </p>
-    <!--<p>
-      {{ today | date:'HH:mm' }}
-    </p>-->
+    <a class="details-link" [routerLink]="['/products/', product.id]">
+      Ver detalles
+    </a>
   </div>
   <div class="row product-actions">
     <button mat-button (click)="addToCart()" class="add-to-cart-button">
