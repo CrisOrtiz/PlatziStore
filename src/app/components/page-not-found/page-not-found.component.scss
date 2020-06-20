@@ -170,12 +170,13 @@ body {
 }
 
 .astronaut__head {
-  background-color: indigo;
+  background-color: #5D5A59;
+  border:5px solid white;
   position: absolute;
   top: 60px;
   left: 60px;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   content: '';
   border-radius: 2em;
 }
