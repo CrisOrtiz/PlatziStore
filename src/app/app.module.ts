@@ -43,7 +43,6 @@ import { HomeModule } from './home/home.module';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
