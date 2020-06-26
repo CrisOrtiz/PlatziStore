@@ -1,10 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules, PreloadingStrategy } from '@angular/router';
-import { ProductsComponent } from './products/products.component';
-import { ContactComponent } from './contact/contact.component';
-import { DemoComponent } from './demo/demo.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
@@ -23,23 +18,19 @@ const routes: Routes = [
       },
       {
         path: 'products',
-        component: ProductsComponent,
+        loadChildren: () => import('./product/product.module').then(m => m.ProductModule)
       },
       {
         path: 'contact',
-        component: ContactComponent,
+        loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
       },
       {
         path: 'demo',
-        component: DemoComponent,
-      },
-      {
-        path: 'products/:id',
-        component: ProductDetailComponent,
+        loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)
       },
       {
         path: '**',
-        component: PageNotFoundComponent,
+        loadChildren: () => import('./page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)
       },
     ],
   },
