@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules, PreloadingStrategy } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
-import { AdminGuard } from './admin.guard';
+import { AdminGuard } from './guardians/admin.guard';
 
 const routes: Routes = [
   {
@@ -15,10 +15,12 @@ const routes: Routes = [
       },
       {
         path: 'home',
+        canActivate: [AdminGuard],
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
       },
       {
         path: 'products',
+        canActivate: [AdminGuard],
         loadChildren: () => import('./product/product.module').then(m => m.ProductModule)
       },
       {

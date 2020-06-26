@@ -9,6 +9,9 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
 
 const material = [
   CommonModule,
@@ -21,6 +24,9 @@ const material = [
   MatSidenavModule,
   MatCardModule,
   MatButtonModule,
+  MatFormFieldModule,
+  MatSelectModule,
+  MatInputModule
 ];
 
 @NgModule({
