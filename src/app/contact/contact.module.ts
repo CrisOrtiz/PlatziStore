@@ -17,7 +17,7 @@ import { MaterialModule } from './../material/material.module';
     CommonModule,
     SharedModule,
     ContactRoutingModule,
-    MaterialModule
+    MaterialModule,
   ]
 })
 export class ContactModule {

@@ -1,31 +1,32 @@
+<h1 style="color: green;">Contactanos <mat-icon aria-hidden="false" aria-label="person" matSuffix>
+    public
+  </mat-icon></h1> 
 <div class="content">
   <form>
     <mat-form-field>
-      <input matInput placeholder="Name" required />
-      <mat-icon aria-hidden="false" aria-label="cart icon">
-        local_grocery_store
+      <input matInput placeholder="Nombre" required />
+      <mat-icon aria-hidden="false" aria-label="person" matSuffix>
+        person
       </mat-icon>
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Enter your email" required />
+      <input matInput placeholder="Correo electronico" required />
       <mat-icon matSuffix>drafts</mat-icon>
     </mat-form-field>
     <mat-form-field>
-      <input type="tel" matInput placeholder="Telephone" required />
+      <input type="tel" matInput placeholder="Telefono" required />
       <mat-icon matSuffix>call</mat-icon>
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Subject" required />
-      <mat-icon matSuffix>create</mat-icon>
+      <textarea matInput placeholder="Comentario" required></textarea>
+      <mat-icon matSuffix>comment</mat-icon>
     </mat-form-field>
-    <mat-form-field>
-      <textarea matInput placeholder="Textarea" required></textarea>
-      <mat-icon matSuffix>save</mat-icon>
-    </mat-form-field>
-    <button mat-raised-button class="btn-custom">
-      Send Now<i class="material-icons">
-        send
-      </i>
-    </button>
+    <div class="buttons">
+      <button mat-raised-button class="btn-custom">
+        Enviar<i class="material-icons">
+          send
+        </i>
+      </button>
+    </div>
   </form>
 </div>
