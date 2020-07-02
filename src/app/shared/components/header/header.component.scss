@@ -1,8 +1,18 @@
+.toolbar{
+    background-color: #00B050;
+    color: white;
+}
 nav a{
     padding: 5px;
     text-decoration: none;
 }
 
 nav .active{
-    background-color: blue;
+    border-bottom:2px solid white;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.header-row{
+    width: 100%;
 }
