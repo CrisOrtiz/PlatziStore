@@ -7,10 +7,16 @@ nav a{
     text-decoration: none;
 }
 
-nav .active{
-    border-bottom:2px solid white;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+nav {
+    .active{
+        border-bottom:2px solid white;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    a{
+        padding: 5px;
+        text-decoration: none;
+    }
 }
 
 .header-row{
